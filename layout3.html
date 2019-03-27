@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">              
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+
+<body>
+    <div id="modalBody">                                <!-- We will use the modalBody as the layer of gray that accentuates the modal content window-->
+        <div id="modalContent">                         <!-- and we will use modalContent to display the actual solution -->
+            <span id="closeBtn">&times;</span>
+            <p id="myOutput">sometext</p>
+        </div>
+    </div>
+
+    <div id="formBody">                                 <!--In order to take input from the user, we will use a form, but first we create a formBody to enclose it and  help us style it later-->
+        <br>
+        <h1>3 Number Sorter</h1>
+        <form id="userInputs">
+            First Number: <br>
+            <input type="number" name="first" value=>
+            <br>
+            Second Number: <br>
+            <input type="number" name="second" value=>
+            <br>
+            Third Number: <br>
+            <input type="number" name="third" value=>
+            <br>
+            <br>
+            <button type="button" id="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <script src="app3.js"></script>                     <!--We link the Javascript at the bottom so that all the HTML elements are processed first and our code can acces them afterwards-->           
+</body>
+</html>

@@ -1,0 +1,100 @@
+#modalBody{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#modalContent{
+    background-color: rgb(255, 255, 255);
+    margin: 25%;
+    padding: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.295), 0 5px 20px 0 rgba(0, 0, 0, 0.295);
+    border-radius: 4px;
+    font-size: 30px;
+    animation-name: delay;
+    animation-duration: .55s;
+}
+
+@keyframes delay{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+#closeBtn{
+    color: rgb(150, 147, 147);
+    float: right;
+    padding: 2px;
+    margin-top: 2px;
+    font-size: 35px;
+}
+
+#closeBtn:hover, .closeBtn:focus{
+    cursor:pointer;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    text-shadow:
+		-1px -1px 0 rgb(142, 250, 130),
+		1px -1px 0 rgb(142, 250, 130),
+		-1px 1px 0  rgb(142, 250, 130),
+		1px 1px 0  rgb(142, 250, 130);
+
+}
+
+#formBody{
+    margin: 0 auto;
+    margin-top:14%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(209, 205, 205); 
+    border-radius: 30px;
+    box-shadow:  15px 15px 8px 0 rgba(0, 0, 0, 0.295), 0 5px 20px 0 rgba(0, 0, 0, 0.295);
+    
+}
+#formBody:hover{
+    transform: rotate(358deg);
+}
+input{
+    border-radius: 5px;
+}
+
+input:hover{
+    background-color: rgba(223, 253, 177, 0.692);
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.295);
+}
+button{
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: rgba(223, 253, 177, 0.692);
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.295);
+    
+}
+
+body{
+    margin: 0px;
+    text-align: center;
+    animation: change 10s infinite;
+}
+
+@keyframes change{
+    0% {background-color: rgb(207, 197, 106);}
+    10%{background-color:rgb(219, 217, 106);}
+    20%{background-color:rgb(214, 139, 95);}
+    30%{background-color:rgb(159, 202, 103);}
+    40% {background-color: rgb(87, 187, 84);}
+    50% {background-color: rgb(97, 194, 154);}
+    60% {background-color: rgb(102, 199, 118);}
+    70% {background-color: rgb(98, 158, 199);}
+    80% {background-color: rgb(155, 109, 199);}
+    90% {background-color: rgb(195, 201, 114);}
+    100% {background-color: rgb(155, 206, 107);}
+  }
